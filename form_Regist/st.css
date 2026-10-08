@@ -1,0 +1,139 @@
+/* Remove default spacing */
+* {
+    box-sizing: border-box;
+}
+
+/* Full page */
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(135deg, #667eea, #764ba2);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Heading */
+h2 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* Form box */
+form {
+    width: 500px;
+    background: white;
+
+    padding: 35px 40px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Labels */
+form label {
+    display: inline-block;
+    width: 100px;
+
+    font-weight: bold;
+    color: #333;
+}
+
+/* Text, Email, Password */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 300px;
+    padding: 11px;
+
+    border: 1px solid #ccc;
+    border-radius: 7px;
+
+    font-size: 14px;
+    outline: none;
+
+    transition: 0.3s;
+}
+
+/* Focus effect */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #667eea;
+
+    box-shadow: 0 0 7px rgba(102, 126, 234, 0.4);
+}
+
+/* Gender radio buttons */
+input[type="radio"] {
+    accent-color: #667eea;
+}
+
+/* Message */
+textarea {
+    width: 100%;
+    height: 120px;
+
+    margin-top: 10px;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+
+    resize: none;
+    outline: none;
+
+    transition: 0.3s;
+}
+
+/* Buttons */
+input[type="submit"],
+input[type="reset"] {
+    padding: 11px 25px;
+
+    border: none;
+    border-radius: 7px;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* Submit button */
+input[type="submit"] {
+    background-color: #667eea;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: #4f46e5;
+    transform: translateY(-2px);
+}
+
+/* Reset button */
+input[type="reset"] {
+    background-color: #e5e7eb;
+    color: #333;
+
+    margin-left: 8px;
+}
+
+input[type="reset"]:hover {
+    background-color: #d1d5db;
+    transform: translateY(-2px);
+}

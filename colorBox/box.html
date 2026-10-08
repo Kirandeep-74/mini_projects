@@ -1,0 +1,82 @@
+<!DOCTYPE html><html>
+<head>
+    <title>Color Changing Boxes</title><style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 80px;
+        background-color: #f4f4f4;
+    }
+
+    h2 {
+        margin-bottom: 30px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .box {
+        width: 120px;
+        height: 120px;
+        border: 2px solid black;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .red {
+        background-color: red;
+    }
+
+    .blue {
+        background-color: blue;
+    }
+
+    .green {
+        background-color: green;
+    }
+
+    .uncolored {
+        background-color: white;
+    }
+</style>
+
+</head><body><h2>Click a Color Box</h2>
+
+<div class="container">
+    <div class="box red" onclick="changeColor('red')"></div>
+    <div class="box blue" onclick="changeColor('blue')"></div>
+    <div class="box green" onclick="changeColor('green')"></div>
+</div>
+
+<br><br>
+
+<h2>Target Boxes</h2>
+
+<div class="container">
+    <div class="box uncolored" id="box1"></div>
+    <div class="box uncolored" id="box2"></div>
+    <div class="box uncolored" id="box3"></div>
+</div>
+
+<script>
+    let nextBox = 1;
+
+    function changeColor(color) {
+        let box = document.getElementById("box" + nextBox);
+
+        box.style.backgroundColor = color;
+
+        nextBox++;
+
+        if (nextBox > 3) {
+            nextBox = 1;
+        }
+    }
+</script>
+
+</body>
+</html>

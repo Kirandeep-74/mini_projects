@@ -1,0 +1,41 @@
+h1{
+    text-align: center;
+    width:20px;
+}
+body{
+    background-color: yellow;
+}
+
+#Circle{
+    margin-bottom:20px;
+    background-color: deeppink;
+    font-size: medium;
+    width: 20px;
+    padding: 10px;
+    border-radius: 50px;
+}
+#a{
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 100px;
+    padding: 30px;
+    border-radius: 40%;
+}
+
+#b{
+    margin-left: 100px;
+    background-color: forestgreen;
+    width: 100px;
+    height:100px;
+    padding:40px;
+    border-radius:40%
+}
+
+#c{
+    margin-left:250px;
+    background-color: plum;
+    width: 100px;
+    height:100px;
+    padding:50px;
+    border-radius:40%
+}
